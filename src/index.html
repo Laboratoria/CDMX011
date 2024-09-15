@@ -2,10 +2,108 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Data Lovers - Studio Ghibli</title>
+    <link rel="stylesheet" href="style.css" /> 
+    <script src="https://kit.fontawesome.com/71936a9880.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e5cb28d452.js" crossorigin="anonymous"></script>   
   </head>
   <body>
+    <header> 
+      <div class="headerContainer">
+        <h1>Ghibli World</h1>
+      </div>
+      <nav>
+        <div class="navContainer">
+          <div class="menuContainer">
+            <ul class="menu" id="menu">
+              <li><a  href="#" class="home_button" id= "home_button">Home</a></li>
+              <li><a href="#" class="movies_button" id= "movies_button">Filmography</a></li>
+              <li><a href="#" class="characters_button" id="characters_button">Characters</a></li>
+            </ul>
+          </div>
+          <a href="#" class="menuHamburguesa" id="menuHamburguesa"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="home" id="home">
+        <div class="aboutDescription">
+          <h2 class="aboutTitle">About Studio Ghibli</h2>
+          <p class="aboutText">It is a Japanese animation film studio headquartered in Koganei, Tokyo. Founded in 1985 by animators and directors Miyazaki Hayao and Takahata Isao and producer Suzuki Toshio. Studio Ghibli is known for the high quality of its filmmaking and its artistry. Its feature films won both critical and popular praise and influenced other animation studios.</p>
+          <p class="scoreAverage"> The average score (on a scale of 1 to 100) of Studio Ghibli's films is: <br><span id = "averageResult"></span></p>
+        </div>
+        <img src="https://i.ibb.co/Z6pC2gS/pngwing-com.png" class="totoroFriends" alt="Totoro and friends" border="0">
+      </div>
+      <div class= "secondPage">
+        <div class = "selector" id = "selector">
+          <label>Sort movies by:
+          <select name="sortMovies" class="sortMovies">
+            <option selected disabled>Choose sort order</option>
+            <optgroup label="Alphabetic">
+              <option value="alphabetic">Alphabetic Order</option>
+            </optgroup>
+            <optgroup label="Release Date">
+              <option value="releaseAscending">Release Date (Ascending)</option>
+              <option value="releaseDescending">Release Date (Descending)</option>
+            </optgroup>
+            <optgroup label="Score">
+              <option value="score">Worst to Best rated</option>
+            </optgroup>
+          </select> 
+          </label>      
+          <label>Filter by film director:
+            <select name="filterMovies" class="filterMovies">
+              <option selected disabled>Choose a film director</option>
+              <option value="all">All</option>
+              <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+              <option value="Isao Takahata">Isao Takahata</option>
+              <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+              <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+              <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+              <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+            </select> 
+          </label>   
+        </div>
+        <div  class= "films" id ="films"></div> 
+      </div>    
+      <div class="thirdPage" id="thirdPage">
+        <div class="selectorCharacters" id="selectorCharacters">
+          <label>Filter by film:
+            <select name="filterCharacters" class="filterCharacters">
+              <option selected disabled>Choose a film</option>
+              <option value="all">All</option>
+              <option value="Castle in the Sky">Castle in the Sky</option>
+              <option value="From Up on Poppy Hill">From Up on Poppy Hill</option>
+              <option value="Grave of the Fireflies">Grave of the Fireflies</option>
+              <option value="Howl's Moving Castle">Howl's Moving Castle</option>
+              <option value="Kiki's Delivery Service">Kiki's Delivery Service</option>
+              <option value="My Neighbor Totoro">My Neighbor Totoro</option>
+              <option value="My Neighbors the Yamadas">My Neighbors the Yamadas</option>
+              <option value="Only Yesterday">Only Yesterday</option>
+              <option value="Pom Poko">Pom Poko</option>
+              <option value="Ponyo on the Cliff by the Sea">Ponyo on the Cliff by the Sea</option>
+              <option value="Porco Rosso">Porco Rosso</option>
+              <option value="Princess Mononoke">Princess Mononoke</option>
+              <option value="Spirited Away">Spirited Away</option>
+              <option value="Tales from Earthsea">Tales from Earthsea</option>
+              <option value="The Cat Returns">The Cat Returns</option>
+              <option value="The Secret World of Arrietty">The Secret World of Arrietty</option>
+              <option value="The Tale of the Princess Kaguya">The Tale of the Princess Kaguya</option>
+              <option value="The Wind Rises">The Wind Rises</option>
+              <option value="When Marnie Was There">When Marnie Was There</option>
+              <option value="Whisper of the Heart">Whisper of the Heart</option>
+            </select> 
+          </label>   
+        </div>
+        <div class="characters" id="characters">
+        </div>
+      </div>  
+    </main>
+    <footer>      
+      <p class="website"><a href="https://www.ghibli.jp/" target="_blank">Studio Ghibli's Official Website</a></p>
+      <p class="twitter"><a href="https://twitter.com/JP_GHIBLI" target="_blank"><i class="fab fa-twitter-square" style="color: #098ED6"></i></a></p>
+      <p class="website"><a href="https://www.ghibli-museum.jp" target="_blank">Studio Ghibli Museum</a></p>
+    </footer> 
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>

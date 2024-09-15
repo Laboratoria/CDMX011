@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap');
+
+* {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E9EFDE;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    font-family: 'Roboto', sans-serif;
+    margin: 30px;
+}
+
+.headerContainer h1{
+    color: #0D566D;      
+    font-family: 'Gayathri', sans-serif;
+    font-size: 80px;
+    height: 80px;
+    padding: 25px;
+}
+
+/* menu */
+.navContainer{
+    display: flex;
+    align-items: center;
+    background-color: #C28800;
+    width: 100%;
+    height: 75px;
+}
+
+.menuContainer{
+    display: flex;
+    width: 100%;
+}
+
+.menuHamburguesa {
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px 0px; 
+    width: 100%;
+    height: 65px;
+    background-color: #C28800;
+    font-family: 'Gayathri', sans-serif;    
+    color: #F9FFED;
+    list-style: none;     
+}
+
+.menu a {
+    color: #F9FFED;
+    font-size: 40px; 
+    padding: 10px 0px 0px;     
+}
+
+/*first page*/
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://i.ibb.co/TDQZk6p/Fondo-Totoro.jpg");
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+}
+
+.home img {
+    display: none;
+}
+
+.aboutDescription {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
+    width: 60%;
+    margin-top: 100px;
+}
+
+.aboutTitle{    
+    color: #0D566D;    
+    font-family: 'Gayathri', sans-serif; 
+    font-size: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.aboutText{
+    font-family: 'Gayathri', sans-serif;
+    font-size: 25px;
+    margin: 40px 50px 0;
+}
+
+.scoreAverage{
+    font-family: 'Gayathri', sans-serif;
+    font-size: 25px;
+    margin: 40px 50px 0;
+}
+
+.scoreAverage span{
+    font-size: 40px;
+    color: #007219;    
+}
+
+.home img {
+    margin-bottom: 100px;
+    
+}
+
+/* Filmography */
+
+.secondPage{
+    margin-bottom: 100px;
+}
+
+
+.selector  {
+    display: none;
+    font-family: 'Gayathri', sans-serif;
+    color: #0D566D;
+    font-size: 35px; 
+    justify-content: space-evenly;   
+    margin-top: 100px;
+}
+
+select {
+    font-size: 25px;
+    border: none;
+    font-family: 'Gayathri', sans-serif;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.selector option {
+    font-size: 20px;
+}
+
+.sortMovie .filterMovies {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    font-family: 'Gayathri', sans-serif;
+    font-size: 20px;
+}
+
+.films{
+    display: none;    
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: 50px 15px 0;
+}
+
+.card_film {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Gayathri', sans-serif;
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 4px 2px rgba(0, 0, 0, 0.25);
+    margin: 30px 0px 30px 70px;
+}
+
+.posterContainer {
+    transform: translateX(-100px);
+    width: 50%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 8px 8px 4px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.card_film img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.movie_info {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(-65px);
+    width: 110%;    
+    height: 72%;
+    bottom: 0;
+    overflow: auto;
+    background-color: #E9EFDE;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.movieDate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;    
+    align-items: center;
+    font-size: 30px;
+}
+
+.rate {
+    color: #437D2E;
+}
+
+.movieDate span{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.movie_info h2 {
+    color: #B46C01;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-size: 27px;;
+}
+
+.movie_info p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.purpleText{
+    color: #460C74;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+/*Characters page*/
+
+.thirdPage {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.selectorCharacters {
+    display: flex;
+    font-family: 'Gayathri', sans-serif;
+    color: #0D566D;
+    font-size: 35px; 
+    margin-bottom: 80px;
+    margin-left: 80px;
+}
+
+ .selectorCharacters select {
+    font-size: 25px;
+    border: none;
+    font-family: 'Gayathri', sans-serif;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.selectorCharacters option {
+    font-size: 20px;
+}
+
+.filterCharacters {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    font-family: 'Gayathri', sans-serif;
+    font-size: 20px;
+}
+
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:10vw;
+    width: 100%;
+ 
+}
+
+.photoimg{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card_character{
+    width: 40%;
+    height: 300px;
+    background-color: #E9EFDE;
+    box-shadow: 8px 8px 4px 2px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    margin: 20px 30px 40px;
+}
+
+.photoContainer{
+    width: 50%;
+    height: 80%;
+    transform: translateX(-22px); 
+    position: relative;
+    box-shadow: 8px 8px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.characterData{
+    font-size: 25px;
+}
+
+.characterData span{
+    color: #460C74;
+    margin: 8px 0;    
+}
+
+.characterName{
+    margin: 20px 0 25px;
+    text-transform: uppercase;
+    color: #B46C01;
+    font-size: 30px;
+}
+
+.characterInfo{
+    transform: translateX(50px);
+    width: 70%;
+    height: 100%;
+    transform:translateY(55px) ;
+    
+}
+
+/* footer */
+
+footer{
+    display:flex;    
+    justify-content:space-around;
+    align-items: center;  
+    height: 100px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+footer a {
+    color: #F9FFED;
+}
+.website{
+    font-family: 'Gayathri', sans-serif;
+    text-decoration: none;
+    background-color: #098ED6; 
+    padding: 20px 15px 15px 15px;  
+    font-size: 25px;    
+    border-radius: 15px;
+}
+footer i{
+    font-size: 50px;    
+}
+
+
+@media only screen and (max-device-width: 900px){
+
+
+    .headerContainer h1{
+        padding: 20px 0 15px;        
+    }
+
+    .navContainer{
+        justify-content: flex-end;
+        position: relative;
+        height: 55px;
+    }
+
+    .menuContainer {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 55px;
+        width: 100%;
+        height: fit-content;
+        z-index: 10;
+    }
+
+    .menuHamburguesa{
+        display: block;
+    }
+    .menuHamburguesa i{
+        font-size: 40px;
+        color: #F9FFED;
+        margin-right: 30px;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content; 
+        padding-top: 10px;
+        padding-bottom: 30px;   
+    }
+
+    .menu.activated{
+        display: flex;
+    }
+
+    .menu a {
+        border-bottom: 2px solid #F9FFED;
+        line-height: 60px;
+        padding: 0;
+        font-size: 30px;
+    }
+
+    .home{
+        background-image: none;
+        background-color: #E9EFDE;
+        height: auto;
+    }
+
+    .home img {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .aboutDescription{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 55px;
+        width: 100%;
+    }
+    .aboutText{
+        font-size: 20px;
+    }
+    .films  {
+        margin-top: 0px;
+        justify-content: center;
+    }
+    .selector {
+        margin-left: 30px;
+    }
+    .card_film {
+        margin-left: 120px;
+    }  
+    .description{
+        font-size: 22px;
+    }
+
+    .photoContainer{
+        height: 250px;
+        width: 200px;
+    }
+
+    .thirdPage{
+        flex-direction: column;
+    }
+    .characters {
+        margin-left: 0;
+    }
+
+
+} 
+
+
+/* For device width 480px and smaller: */
+@media only screen and (max-device-width: 480px) {
+    .haederContainer{
+        margin: 15px;        
+    }
+
+    .headerContainer h1{
+        font-size: 70px;
+        padding: 15px;
+    }
+
+    .navContainer{
+        height: 70px;
+    }
+
+    .menuContainer {
+        top: 76px;
+        background-color: #C28800;   
+    }
+    .menuHamburguesa i{
+        font-size: 40px;
+    }
+
+    .menu{
+        padding: 40px 0px 45px;         
+    }
+    
+    .menu.activated{
+        background-color: #C28800;   
+        margin-top: -20px;
+        height: 300px;
+    }
+
+    .menu a {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .home img {
+        width: 80%;
+        margin: 0;
+    }
+
+    .aboutDescription{
+        margin-top: 80px;
+    }
+
+    .aboutTitle{
+        font-size: 40px;
+    }
+    .aboutText{
+        font-size: 15px;
+    }
+
+    .selector{
+        display: none;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .selector label {
+        margin: 20px;
+        font-size: 40px;
+    }
+
+    .selector select {
+        font-size: 25px;
+    }
+
+    .selector option {
+        font-size: 18px;
+    }
+
+    .card_film{
+        flex-direction: column;
+        height: 1500px;
+        margin-left: 0;
+        margin-top: 300px;
+        display: flex;
+        align-items: center;
+    }
+
+    .posterContainer{
+        height: 550px;
+        transform: translate(0, -250px)
+    }
+
+    .movie_info{
+        transform: translate(0, -130px);
+        width: 98%;        
+        padding-bottom: 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .movieDate{
+        margin-bottom: 40px;
+    }
+    .movie_info p {
+        margin-top: 30px;
+        font-size: 35px;
+    }
+    .movieDate p {
+        font-size: 45px;
+    }
+    .movie_info h2 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .selectorCharacters{
+        margin-bottom: 100px;
+    }
+
+    .selectorCharacters label {
+        margin: 20px;
+        font-size: 40px;
+    }
+
+    .selectorCharacters select {
+        font-size: 25px;
+    }
+
+    .selectorCharacters option {
+        font-size: 18px;
+    }
+    .characters{
+        justify-content: space-evenly;
+    }
+
+    .card_character{
+        flex-direction: column;        
+        margin-bottom: 120px;
+        margin-top: 80px;
+        margin-left: 0px;
+        width: 40%;
+        height: 450px; 
+    }
+    
+    .photoContainer{
+        max-width: 40%;
+        height: 80%;        
+        transform: translate(0, -100px);
+    }
+
+    .characterInfo{
+        transform: translate(0, -80px);
+        width: 100%;
+    }
+
+    .characterData{
+        
+        display: flex;
+        justify-content: space-evenly;     
+        margin-left: 40px;
+        font-size: 25px;   
+        padding: 20px;
+    }
+
+    .characterName{
+        margin: 15px;
+        text-align: center;
+        font-size: 30px;
+    }
+}
