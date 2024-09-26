@@ -1,7 +1,16 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterByTeam } from '../src/data.js';
 
 
-describe('example', () => {
+describe("filterByTeam", () =>{
+  it ("is a function", () => {
+    expect(typeof filterByTeam).toBe("function");
+  });
+  it ("returns 'dataByTeam'", () => {
+    expect(typeof filterByTeam).toBe("function");
+  });
+});
+
+/*describe('example', () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
   });
@@ -21,3 +30,4 @@ describe('anotherExample', () => {
     expect(anotherExample()).toBe('OMG');
   });
 });
+*/

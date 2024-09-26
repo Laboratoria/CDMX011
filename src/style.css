@@ -1,0 +1,115 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  align-content: center;
+  justify-content: center;
+ }
+body{
+  background: linear-gradient(269.66deg, rgba(115, 17, 150, 0.88) 11.17%, rgba(182, 14, 115, 0.88) 43.8%, rgba(59, 6, 68, 0.88) 95.57%);
+  justify-content: center;
+}
+.banner{
+width: 100%;
+display: flex;
+}
+.menu{
+display: flex;
+margin: auto;
+}
+.menubtn {
+background-color: white;
+color: #B0005B;
+font-size: 26px;
+font-family: 'Aclonica', sans-serif;
+border: none;
+width: 25%;
+height: 55px;
+}
+.menubtn:hover {
+  display: block;
+  background-color: #acf690;
+}
+.presentation{
+font-family: 'Montserrat', sans-serif; 
+font-size: 18px;
+color: #FDFB5D;
+align-self: center;
+}
+
+.filter{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;  
+  margin: 9px;
+}
+.selector{
+    font-family: 'Aldrich', sans-serif;  
+    color:#076F8F;
+    font-size: 27px;
+    background: #B2F02E;
+    border-radius: 12px;
+    width: 302px;
+    height:42px;
+    left: 353px;
+    top: 181px;
+    margin: 15px;
+    }
+.card{
+width: 330px;
+height: 220px;
+background: rgba(13, 58, 124, 0.829);
+border-radius: 10px;  
+margin: 5px;
+}
+#root{
+width: 100%;
+margin: 5px;
+display: flex;
+flex-wrap: wrap;
+}
+.contentcard{
+    font-size: 15px;
+    font-family: 'Montserrat'; 
+    color: #f6f6f6;
+    margin-top: 2px;
+    text-align: center;
+    line-height: 1.8;
+    background-color: #0D5FDB;
+}
+@media screen and (max-width: 1000px) {
+  .menubtn {
+    font-size: 18px;
+    height: 45px;
+  }
+  .presentation{
+  font-size: 15px ;
+  }
+}
+@media screen and (max-width:570px) {
+  body{
+    background: linear-gradient(109.3deg, #088BA6 12.97%, #088BA6 35.54%, #16ADB7 60.71%, #16C9D5 84.03%);
+  }
+  .menubtn {
+    font-size: 15px;
+    height: 30px;
+  }
+  .presentation{
+  font-size: 10px ;
+  }
+  .selector{
+    font-size: 18px;
+    border-radius: 10px;
+    width: 210px;
+    height:35px;
+    margin: 7px;
+    }
+}
+@media screen and (max-width:460px) {
+  .menubtn {
+    font-size: 10px;
+    height: 30px;
+  }
+  .presentation{
+  font-size: 8px ;
+  }
+}
